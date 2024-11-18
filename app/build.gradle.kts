@@ -23,7 +23,7 @@ apksign {
 }
 
 android {
-    namespace = "com.origin.tencent"
+    namespace = "me.weishu.kernelsu"
 
     buildTypes {
         release {

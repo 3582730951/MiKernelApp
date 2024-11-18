@@ -74,7 +74,6 @@ subprojects {
 
             defaultConfig {
                 minSdk = androidMinSdkVersion
-
                 if (this is ApplicationDefaultConfig) {
                     targetSdk = androidTargetSdkVersion
                     versionCode = managerVersionCode
