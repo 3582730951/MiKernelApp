@@ -10,7 +10,9 @@ plugins {
     alias(libs.plugins.compose.compiler) apply false
     alias(libs.plugins.lsplugin.cmaker)
 }
-
+dependencies {
+    implementation "com.google.devtools.ksp:symbol-processing-api:1.8.0-1.0.6"
+}
 cmaker {
     default {
         arguments.addAll(
