@@ -13,9 +13,7 @@ plugins {
     kotlin("android") // 引入 Kotlin 插件
     kotlin("jvm") version "1.8.0" // 或者其他你正在使用的版本
 }
-dependencies {
-    implementation "com.google.devtools.ksp:symbol-processing-api:1.8.0-1.0.6"
-}
+
 cmaker {
     default {
         arguments.addAll(
