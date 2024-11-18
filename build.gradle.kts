@@ -71,9 +71,10 @@ subprojects {
             compileSdk = androidCompileSdkVersion
             ndkVersion = androidCompileNdkVersion
             buildToolsVersion = androidBuildToolsVersion
-
+            ext.kotlin_version = '1.8.0'
             defaultConfig {
                 minSdk = androidMinSdkVersion
+
                 if (this is ApplicationDefaultConfig) {
                     targetSdk = androidTargetSdkVersion
                     versionCode = managerVersionCode
