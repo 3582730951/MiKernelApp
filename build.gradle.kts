@@ -71,7 +71,9 @@ subprojects {
             compileSdk = androidCompileSdkVersion
             ndkVersion = androidCompileNdkVersion
             buildToolsVersion = androidBuildToolsVersion
-            ext.kotlin_version = '1.8.0'
+            ext {
+                kotlin_version = '1.8.0'  // 正确的版本设置
+            }
             defaultConfig {
                 minSdk = androidMinSdkVersion
 
@@ -81,7 +83,7 @@ subprojects {
                     versionName = managerVersionName
                 }
                 ndk {
-                    abiFilters += listOf("arm64-v8a", "x86_64", "riscv64")
+                    abiFilters += listOf("arm64-v8a")
                 }
             }
 
