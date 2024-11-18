@@ -9,6 +9,9 @@ plugins {
     alias(libs.plugins.kotlin) apply false
     alias(libs.plugins.compose.compiler) apply false
     alias(libs.plugins.lsplugin.cmaker)
+    id("com.android.application") // 或者 "com.android.library" 根据项目类型
+    kotlin("android") // 引入 Kotlin 插件
+    kotlin("jvm") version "1.8.0" // 或者其他你正在使用的版本
 }
 dependencies {
     implementation "com.google.devtools.ksp:symbol-processing-api:1.8.0-1.0.6"
